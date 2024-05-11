@@ -10,7 +10,7 @@ function App() {
   const [units, setUnits] = useState("metric");
   const [bg, setBg] = useState(hotBg);
                          
-  useEffect(() => {
+  useEffect(() => { 
     const fetchWeatherData = async () =>{
       const data = await getFormattedWeatherData(city, units);
       setWeather(data);
